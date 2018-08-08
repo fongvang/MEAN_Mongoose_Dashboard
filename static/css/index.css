@@ -1,0 +1,41 @@
+/* body{
+    background-color: yellow;
+} */
+
+.container img{
+    height: 250px;
+    width: 500px;
+}
+img{
+    border: 5px solid black;
+}
+
+textarea{
+    margin: 0px;
+    width: 400px;
+    height: 254px;
+}
+
+.container{
+    border: 1px solid black;
+    width: 510px;
+    margin: 50px auto;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+}
+
+button{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 45%;
+}
+
+
+
+
+
+
+

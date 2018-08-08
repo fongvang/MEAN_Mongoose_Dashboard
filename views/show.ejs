@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="show.css">
+    <title>Document</title>
+<style>
+    form{
+        display: inline;
+    }
+    button a {
+        text-decoration: none;
+        color: black;
+    }
+    button{
+        width: 100px;
+        height: 30px;
+        background: blueviolet;
+        border-radius: 10px;
+    }
+    .delete{
+        width: 100px;
+        height: 30px;
+        background: red;
+        border-radius: 10px;
+    }
+</style>
+
+</head>
+<body>
+<h1>Show page</h1>    
+
+<div class="container">
+
+    <img src="<%=animal.image%>" alt="Picture of an animal">
+    
+    <p>Name: <%=animal.name%></p>
+    
+    <p>Animal Type: <%=animal.type%></p>
+    
+    <p>Diet: <%=animal.diet%></p>
+    
+    <p>Life Span: <%=animal.life%></p>
+    
+    <button><a href="/<%=animal.id%>/edit">Edit</a></button>
+    <!-- <button><a href="/<%=animal.id%>/destroy">Delete</a></button> -->
+    <form action="/<%=animal.id%>/destroy" method="POST"><button class="delete">Destroy</button></form>
+
+</div>
+
+</body>
+</html>
